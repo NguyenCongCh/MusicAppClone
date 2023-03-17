@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#70e1f5"
+    android:orientation="vertical"
+    tools:context=".fragments.ChuDeFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="TOPIC"
+        android:textColor="#096677"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fmChuDe_recyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#70e1f5" />
+
+    <!--    <TextView-->
+    <!--        android:textColor="#736868"-->
+    <!--        android:layout_marginStart="10dp"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Xem thêm Playlist"-->
+    <!--        android:drawableStart="@drawable/iconmoreplaylist"-->
+    <!--        android:drawablePadding="8dp"-->
+    <!--        android:textSize="16sp"-->
+    <!--        android:layout_marginTop="10dp"/>-->
+</LinearLayout>
