@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border1"
+    android:orientation="horizontal"
+    android:weightSum="5"
+    android:layout_margin="7dp">
+
+    <ImageView
+        android:id="@+id/itemBaiHatNgauNhien_imgBaiHat"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:background="#595353" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/itemBaiHatNgauNhien_txtBaiHat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="2dp"
+            android:text="Tên bài hát"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/itemBaiHatNgauNhien_txtCaSi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="2dp"
+            android:text="Tên ca sĩ"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/itemBaiHatNgauNhien_txtCaSi_icLove"
+        android:layout_width="19dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/iconlove" />
+</LinearLayout>
