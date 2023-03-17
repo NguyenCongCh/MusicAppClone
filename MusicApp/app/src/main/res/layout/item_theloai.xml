@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="2dp">
+
+    <ImageView
+        android:id="@+id/itemTheloai_img"
+        android:background="@color/design_default_color_primary"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="250dp"
+        android:layout_height="120dp" />
+
+    <TextView
+        android:id="@+id/itemTheloai_txtTheloai"
+        android:text="ChuDe"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/itemTheloai_img"
+        app:layout_constraintEnd_toEndOf="@id/itemTheloai_img"
+        app:layout_constraintTop_toTopOf="@id/itemTheloai_img"
+        app:layout_constraintBottom_toBottomOf="@id/itemTheloai_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+/></androidx.constraintlayout.widget.ConstraintLayout>
