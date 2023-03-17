@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".fragments.PlaylistFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#70e1f5"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="FEEL THE BEAT!!!"
+        android:textColor="#096677"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#70e1f5">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fmPlaylist_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </androidx.core.widget.NestedScrollView>
+
+    <!--    <TextView-->
+    <!--        android:textColor="#736868"-->
+    <!--        android:layout_marginStart="10dp"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Xem thêm Playlist"-->
+    <!--        android:drawableStart="@drawable/iconmoreplaylist"-->
+    <!--        android:drawablePadding="8dp"-->
+    <!--        android:textSize="16sp"-->
+    <!--        android:layout_marginTop="10dp"/>-->
+
+</LinearLayout>
