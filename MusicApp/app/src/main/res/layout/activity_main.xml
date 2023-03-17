@@ -5,121 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="10"
-    android:background="@color/purple_200"
-    tools:context=".MainActivity">
-    <LinearLayout
+    tools:context=".activities.MainActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/MainActivity_ViewPager"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="7"
-        android:gravity="center"
-        android:orientation="vertical">
-        <TextView
-            android:id="@+id/tvsongname"
-            android:layout_margin="20dp"
-            android:ellipsize="marquee"
-            android:marqueeRepeatLimit="marquee_forever"
-            android:padding="10dp"
-            android:singleLine="true"
-            android:text="Song name"
-            android:textColor="#FFF"
-            android:textStyle="italic"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+        android:layout_weight="1" />
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="250dp"
-            android:layout_height="250dp"
-            android:layout_marginBottom="8dp"
-            android:src="@drawable/disk_img" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="60dp">
-            <SeekBar
-                android:id="@+id/seekbar"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:layout_alignParentBottom="true"
-                android:layout_margin="20dp"
-                android:layout_marginBottom="40dp"/>
-            <TextView
-                android:id="@+id/tvstart"
-                android:layout_toLeftOf="@+id/seekbar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:layout_alignParentLeft="false"
-                android:layout_marginLeft="20dp"
-                android:text="0:10"
-                android:textColor="#FFF"
-                android:textSize="14sp" />
-            <TextView
-                android:id="@+id/tvstop"
-                android:layout_toRightOf="@+id/seekbar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:layout_alignParentRight="false"
-                android:layout_marginRight="20dp"
-                android:text="4:10"
-                android:textColor="#FFF"
-                android:textSize="14sp" />
-        </RelativeLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="3">
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-                <Button
-                    android:id="@+id/playbtn"
-                    android:background="@drawable/ic_pause"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_centerHorizontal="true"
-                    app:backgroundTint="@color/white"/>
-                <Button
-                    android:id="@+id/btnnext"
-                    android:layout_toRightOf="@+id/playbtn"
-                    android:layout_marginTop="15dp"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/ic_skipnext"
-                    app:backgroundTint="@color/white"/>
-                <Button
-                    android:id="@+id/btnprevious"
-                    android:layout_toLeftOf="@+id/playbtn"
-                    android:layout_marginTop="15dp"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/ic_skipprevious"
-                    app:backgroundTint="@color/white"/>
-                <Button
-                    android:id="@+id/btnff"
-                    android:layout_toRightOf="@+id/btnnext"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginLeft="15dp"
-                    android:background="@drawable/ic_fastforward"
-                    app:backgroundTint="@color/white"/>
-                <Button
-                    android:id="@+id/btnfr"
-                    android:layout_toLeftOf="@+id/btnprevious"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginRight="15dp"
-                    android:background="@drawable/ic_fastrewind"
-                    app:backgroundTint="@color/white"/>
-
-            </RelativeLayout>
-        </LinearLayout>
-    </LinearLayout>
-
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/MainActivity_TabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:tabIndicatorColor="#F9A825"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="#f20"
+        app:tabTextColor="@color/black" />
 
 </LinearLayout>
