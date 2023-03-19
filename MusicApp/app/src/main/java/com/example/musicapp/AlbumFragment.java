@@ -67,7 +67,7 @@ public class AlbumFragment extends Fragment {
 
             @Override
             public void onFailure(Call<List<Album>> call, Throwable t) {
-                Log.d("tag", "Load data Album fail");
+                Log.d("tag", "Load data Album failed");
             }
         });
     }
