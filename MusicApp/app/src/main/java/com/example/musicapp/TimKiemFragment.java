@@ -19,6 +19,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.musicapp.R;
 import com.liem.musicapp.R;
 import com.liem.musicapp.activities.DanhSachBaiHatActivity;
 import com.liem.musicapp.adapters.RecyclerAdapterBaiHatNgauNhien;
