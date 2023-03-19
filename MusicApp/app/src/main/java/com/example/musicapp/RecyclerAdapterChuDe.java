@@ -28,7 +28,7 @@ public class RecyclerAdapterChuDe extends RecyclerView.Adapter<RecyclerAdapterCh
         this.chuDeArrayList = chuDeArrayList;
     }
 
-
+    @NonNull
     @NotNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull @NotNull ViewGroup parent, int viewType) {
