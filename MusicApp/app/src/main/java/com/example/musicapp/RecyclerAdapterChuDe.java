@@ -46,7 +46,7 @@ public class RecyclerAdapterChuDe extends RecyclerView.Adapter<RecyclerAdapterCh
     @Override
     public int getItemCount() {
         return chuDeArrayList.size();
-
+        //return 0;
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
