@@ -12,7 +12,7 @@
         android:background="#ffd194"
         android:gravity="center"
         android:padding="10dp"
-        android:text="Try something new"
+        android:text="Try Something New"
         android:textColor="#7C5D34"
         android:textSize="20sp"
         android:textStyle="bold" />
