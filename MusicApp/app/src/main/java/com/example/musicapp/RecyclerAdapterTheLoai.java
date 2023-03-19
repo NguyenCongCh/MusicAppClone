@@ -57,7 +57,7 @@ public class RecyclerAdapterTheLoai extends RecyclerView.Adapter<RecyclerAdapter
     @Override
     public int getItemCount() {
         return theLoaiArrayList.size();
-
+        //return 0;
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
