@@ -12,6 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
 
+import com.example.musicapp.R;
 import com.liem.musicapp.R;
 import com.liem.musicapp.activities.DanhSachBaiHatActivity;
 import com.liem.musicapp.models.QuangCao;
