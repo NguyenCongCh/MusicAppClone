@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
+import com.example.musicapp.R;
 import com.liem.musicapp.R;
 import com.liem.musicapp.adapters.RecyclerAdapterChuDe;
 import com.liem.musicapp.adapters.RecyclerAdapterPlaylist;
