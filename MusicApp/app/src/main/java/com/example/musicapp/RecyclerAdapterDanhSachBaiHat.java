@@ -63,7 +63,6 @@ public class RecyclerAdapterDanhSachBaiHat extends RecyclerView.Adapter<Recycler
     @Override
     public int getItemCount() {
         return baiHatArrayList.size();
-//        return 0;
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
