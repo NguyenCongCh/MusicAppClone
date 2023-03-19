@@ -6,6 +6,7 @@ import androidx.viewpager.widget.ViewPager;
 import android.graphics.Color;
 import android.os.Bundle;
 
+import com.example.musicapp.R;
 import com.google.android.material.tabs.TabLayout;
 import com.liem.musicapp.R;
 import com.liem.musicapp.adapters.ViewPagerAdapterMain;
