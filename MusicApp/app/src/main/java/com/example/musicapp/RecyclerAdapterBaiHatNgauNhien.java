@@ -42,7 +42,7 @@ public class RecyclerAdapterBaiHatNgauNhien extends RecyclerView.Adapter<Recycle
         BaiHat baiHat = baiHatArrayList.get(position);
         holder.txtCaSi.setText(baiHat.getTenCaSi() );
         holder.txtBaiHat.setText(baiHat.getTenBaiHat());
-        Picasso.get().load(baiHat.getHinhAnhBaiHat()).into(holder.imgBaiHat);
+        //Picasso.get().load(baiHat.getHinhAnhBaiHat()).into(holder.imgBaiHat);
 
         holder.imgLove.setOnClickListener(new View.OnClickListener() {
             @Override
