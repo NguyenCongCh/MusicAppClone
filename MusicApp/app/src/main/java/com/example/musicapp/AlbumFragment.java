@@ -47,9 +47,7 @@ public class AlbumFragment extends Fragment {
         return view;
     }
 
-    private void mapping() {
-        recyclerView = view.findViewById(R.id.fmAlbum_recyclerView);
-    }
+
 
     private void getData(){
         DataService dataService = ApiService.getService();
