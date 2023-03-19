@@ -64,7 +64,7 @@ public class BannerFragment extends Fragment {
                 bannerAdapter = new ViewPagerBannerAdapter(getActivity(), banners);
                 mViewPager.setAdapter(bannerAdapter);
                 mCircleIndicator.setViewPager(mViewPager);
-                Log.d("BBB",banners.get(0).getTenBaiHat());
+                Log.d("BBB",banners.get(1).getTenBaiHat());
                 //Auto scroll banner
                 Handler handler = new Handler();
                 runnable = new Runnable() {
