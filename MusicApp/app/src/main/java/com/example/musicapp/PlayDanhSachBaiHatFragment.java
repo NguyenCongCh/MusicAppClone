@@ -37,6 +37,6 @@ public class PlayDanhSachBaiHatFragment extends Fragment {
         recyclerView.setAdapter(recyclerAdapterPlayDanhSachBaiHat);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         return view;
-        //Return the List of Songs 
+        //Return the List of Songs
     }
 }
