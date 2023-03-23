@@ -204,12 +204,12 @@ public class PlayNhacActivity extends AppCompatActivity {
                     mediaPlayer.stop();
                     positon++;
                     baiHat = baiHatArrayList.get(positon);
-                    init();
+                    customView();
                 } else {
                     mediaPlayer.stop();
                     positon = 0;
                     baiHat = baiHatArrayList.get(0);
-                    init();
+                    customView();
                 }
             } else {
                 Random ran = new Random();
