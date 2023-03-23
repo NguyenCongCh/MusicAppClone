@@ -62,7 +62,7 @@ public class RecyclerAdapterPlaylist extends RecyclerView.Adapter<RecyclerAdapte
 
     @Override
     public int getItemCount() {
-        return 0;
+        return playlists.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
