@@ -51,7 +51,7 @@ public class RecyclerAdapterChuDe extends RecyclerView.Adapter<RecyclerAdapterCh
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView txtChude;
-        ImageView imgsrc;
+        ImageView img;
 
         public ViewHolder(@NonNull @NotNull View itemView) {
             super(itemView);
