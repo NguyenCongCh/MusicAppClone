@@ -17,7 +17,7 @@ public class Playlist implements Serializable {
     @SerializedName("Hinhnen")
     @Expose
     private String hinhNen;
-    @SerializedName("Hinhicon")
+    @SerializedName("Hinhicontheloai")
     @Expose
     private String hinhIcon;
 
