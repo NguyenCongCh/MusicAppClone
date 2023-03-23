@@ -146,12 +146,12 @@ public class PlayNhacActivity extends AppCompatActivity {
                         if ((positon - 1) >= 0) {
                             mediaPlayer.stop();
                             baiHat = baiHatArrayList.get(--positon);
-                            init();
+                            customView();;
                         } else {
                             mediaPlayer.stop();
                             positon = baiHatArrayList.size() - 1;
                             baiHat = baiHatArrayList.get(baiHatArrayList.size() - 1);
-                            init();
+                            customView();;
                         }
                     } else {
                         Random ran = new Random();
@@ -159,12 +159,12 @@ public class PlayNhacActivity extends AppCompatActivity {
                         if (positon < (baiHatArrayList.size() - 1)) {
                             mediaPlayer.stop();
                             baiHat = baiHatArrayList.get(positon);
-                            init();
+                            customView();;
                         }
                     }
                 } else {
                     mediaPlayer.stop();
-                    init();
+                    customView();;
                 }
             }
         });
@@ -286,8 +286,14 @@ public class PlayNhacActivity extends AppCompatActivity {
             if (intent.hasExtra("listBaiHat") && intent.hasExtra("baiHat")) {
                 baiHat = (BaiHat) intent.getParcelableExtra("baiHat");
                 baiHatArrayList = intent.getParcelableArrayListExtra("listBaiHat");
-                positon = baiHatArrayList.indexOf(baiHat);
+                positon = baiHatArrayList.indexOf(baiHat);   //lỗi positon = -1 khi khởi tạo
+                boolean tf = baiHatArrayList.contains(baiHat);
+//                for(int i=0;i<baiHatArrayList.size();i++){
+//                    if(baiHatArrayList.get(i).getTenBaiHat().equals(baiHat.getTenBaiHat()))
+//                        positon=i;
+//                }
                 Log.d("tag", baiHatArrayList.get(0).getHinhAnhBaiHat());
+                Log.d("Testposition",String.valueOf(baiHat.getTenBaiHat()));
             } else if (intent.hasExtra("baiHat")) {
                 baiHat = (BaiHat) intent.getParcelableExtra("baiHat");
                 baiHatArrayList = new ArrayList<>();
