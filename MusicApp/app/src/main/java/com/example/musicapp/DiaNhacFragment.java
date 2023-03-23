@@ -43,20 +43,7 @@ public class DiaNhacFragment extends Fragment {
                              Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_dia_nhac, container, false);
         circleImageView = view.findViewById(R.id.fmDiaNhac_CircleImageView);
-//        objectAnimator= ObjectAnimator.ofFloat(circleImageView,"rotation",0f,359f);
-//        objectAnimator.setDuration(10000);
-//        objectAnimator.setRepeatCount(ValueAnimator.INFINITE);
-//        objectAnimator.setRepeatMode(ValueAnimator.RESTART);
-//        objectAnimator.setInterpolator(new LinearInterpolator());
-//        circleImageView.animate().start();
-//        Runnable runnable = new Runnable() {
-//            @Override
-//            public void run() {
-//                circleImageView.animate().rotationBy(360).withEndAction(this).setDuration(10000).setInterpolator(new LinearInterpolator()).start();
-//            }
-//        };
-//
-//        circleImageView.animate().rotationBy(360).withEndAction(runnable).setDuration(10000).setInterpolator(new LinearInterpolator()).start();
+
         PlayRotateDics();
         return view;
     }
