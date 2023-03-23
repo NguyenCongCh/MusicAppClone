@@ -43,7 +43,6 @@ public class DiaNhacFragment extends Fragment {
                              Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_dia_nhac, container, false);
         circleImageView = view.findViewById(R.id.fmDiaNhac_CircleImageView);
-
         PlayRotateDics();
         return view;
     }
