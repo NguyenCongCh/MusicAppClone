@@ -13,6 +13,9 @@ public class ChuDe implements Serializable {
     @SerializedName("TenChuDe")
     @Expose
     private String tenChuDe;
+//    @SerializedName("HinhChu")
+//    @Expose
+//    private String hinhChuDe;
     @SerializedName("HinhChuDe")
     @Expose
     private String hinhChuDe;
