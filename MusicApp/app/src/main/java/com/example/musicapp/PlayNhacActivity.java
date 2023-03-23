@@ -198,8 +198,8 @@ public class PlayNhacActivity extends AppCompatActivity {
     }
 
     private void nextBaiHat() {
-        if (repeat) {
-            if (shuffle) {
+        if (!repeat) {
+            if (!shuffle) {
                 if (positon < baiHatArrayList.size() - 1) {
                     mediaPlayer.stop();
                     positon++;
