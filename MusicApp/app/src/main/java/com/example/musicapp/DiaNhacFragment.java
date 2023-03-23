@@ -57,7 +57,7 @@ public class DiaNhacFragment extends Fragment {
 //        };
 //
 //        circleImageView.animate().rotationBy(360).withEndAction(runnable).setDuration(10000).setInterpolator(new LinearInterpolator()).start();
-            PlayRotateDics();
+        PlayRotateDics();
         return view;
     }
 
