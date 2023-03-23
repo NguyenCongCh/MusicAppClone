@@ -25,7 +25,7 @@ public class ViewPagerAdapterPlayNhac extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return fragmentArrayList.size();
+        return 0;
     }
 
     public void addFragment(Fragment fragment) {
